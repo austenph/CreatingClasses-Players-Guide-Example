@@ -1,1 +1,2 @@
 c:\users\wecancodeit\documents\visual studio 2015\Projects\CreatingClasses Players Guide Example\CreatingClasses Players Guide Example\bin\Debug\CreatingClasses Players Guide Example.exe.config
+c:\users\wecancodeit\documents\visual studio 2015\Projects\CreatingClasses Players Guide Example\CreatingClasses Players Guide Example\obj\Debug\CreatingClasses Players Guide Example.csprojResolveAssemblyReference.cache

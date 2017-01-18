@@ -10,9 +10,9 @@ namespace CreatingClasses_Players_Guide_Example
     {
         //fields
       private double radius;
-      private int color;
-       private int times_thrown;
-      
+      private Color color = new Color(100, 100, 100);
+      private int times_thrown;
+
         //properties
         public int TimesThrown
         {
@@ -23,10 +23,9 @@ namespace CreatingClasses_Players_Guide_Example
         public Ball ()
         {
             this.radius = 0;
-            this.color = 0;
             this.times_thrown = 0;
         }
-        public Ball (double radius, int color, int times_thrown)
+        public Ball (double radius, Color color, int times_thrown)
         {
             this.radius = radius;
             this.color = color;
@@ -40,19 +39,13 @@ namespace CreatingClasses_Players_Guide_Example
             return size;
         }
 
-        public int Throw (int radius, int throwcount)
+        public int Throw ()
         {
-            int newcount;
-
-            if (radius == 0)
+            if (radius > 0)
             {
-                newcount = throwcount + 1;
+                this.times_thrown = this.times_thrown +1;
             }
-            else
-            {
-                newcount = throwcount;
-            }
-            return newcount;
+            return this.times_thrown;
         }
     }
 }
